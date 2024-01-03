@@ -64,4 +64,4 @@
     
 })(jQuery);
 
-document.getElementById("counter").innerHTML = "357/1000"
+document.getElementById("counter").innerHTML = "367/1000"

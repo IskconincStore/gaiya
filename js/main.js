@@ -57,7 +57,7 @@
   });
 })(jQuery);
 
-var url = "https://api.krishnaconsciousnesssociety.com/api/cowcare-data";
+var url = "https://api.krishnaconsciousnesssociety.com/api/content-control";
 
 fetch(url)
   .then((response) => {

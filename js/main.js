@@ -67,9 +67,10 @@ fetch(url)
     return response.json();
   })
   .then((data) => {
+    console.log(data?.data)
     document.getElementById(
       "counter"
-    ).innerHTML = `${data?.attributes?.cowsFed}/${data?.attributes?.cowCareTarget}`;
+    ).innerHTML = `${data?.data?.attributes?.cowsFed}/${data?.data?.attributes?.cowCareTarget}`;
   })
   .catch((error) => {
     console.error("There was a problem with the fetch operation:", error);

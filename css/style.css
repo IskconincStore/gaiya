@@ -556,7 +556,7 @@
 .advisories-section {
   position: relative;
   width: 100%;
-  padding-top: 4rem;
+  padding: 4rem;
   background-image: url("/img/advisoriesbg.jpg");
   background-size: cover;
   background-position: center;
@@ -565,7 +565,6 @@
 }
 
 .advisories-container {
-  padding: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -639,6 +638,19 @@
 
   .advisories-container {
     flex-direction: column;
+    gap: 8rem;
+  }
+
+  .advisor{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .advisor .advisor-data hr{
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
 
   .hide-mobile {

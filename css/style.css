@@ -518,16 +518,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  #gopal-farms {
-    background: #5b8c51 !important;
-  }
-
-  .hide-mobile {
-    display: none;
-  }
-}
-
 .junior-team-members-container {
   width: 100%;
   display: flex;
@@ -561,4 +551,97 @@
 .custom-team-card p {
   font-size: 12px;
   text-align: center;
+}
+
+.advisories-section {
+  position: relative;
+  width: 100%;
+  padding-top: 4rem;
+  background-image: url("/img/advisoriesbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.advisories-container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.advisories-container::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.advisor {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: #FFF;
+}
+
+.advisor .advisor-img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  background: #95d69b;
+  background: linear-gradient(135deg, #95d69b, #28cdc6);
+}
+
+.advisor .advisor-data h5{
+  color: #FFF;
+  font-weight: 600;
+}
+
+.advisor .advisor-data p{
+  font-size: 12px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+.advisor .advisor-data hr{
+  position: relative;
+  max-width: 180px;
+  border: none;
+  border-top: 2px solid #FFF;
+}
+
+.advisor .advisor-data .about{
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #gopal-farms {
+    background: #5b8c51 !important;
+  }
+
+  .advisories-section {
+    padding: 1rem;
+  }
+
+  .advisories-container {
+    flex-direction: column;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
 }

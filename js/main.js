@@ -471,3 +471,31 @@ const chapatiDonors = [
   "Nidhi Sharma 12",
   "Riya ramesh sharma 12",
 ];
+
+fodderDonors.forEach((donor) => {
+  var pElement = document.createElement("p");
+  pElement.textContent = donor;
+
+  document.getElementById("green-fodder").append(pElement);
+});
+
+carrotDonors.forEach((donor) => {
+  var pElement = document.createElement("p");
+  pElement.textContent = donor;
+
+  document.getElementById("carrot").append(pElement);
+});
+
+jaggeryDonors.forEach((donor) => {
+  var pElement = document.createElement("p");
+  pElement.textContent = donor;
+
+  document.getElementById("jaggery").append(pElement);
+});
+
+chapatiDonors.forEach((donor) => {
+  var pElement = document.createElement("p");
+  pElement.textContent = donor;
+
+  document.getElementById("chapati").append(pElement);
+});
